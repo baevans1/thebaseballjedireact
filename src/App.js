@@ -6,16 +6,27 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>The Baseball Jedi</h2>
+          <ul className='nav nav-tabs'>
+            <li><a href='/'>MLB</a></li>
+            <li><a href='/'>Prospect Watch</a></li>
+            <li><a href='/'>Fantasy Baseball</a></li>
+            <li><a href='/'>Stadiums</a></li>
+          </ul>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+        <div className='container'>
+          <a href='/' className="App-intro navbar-brand">
+            The Baseball Jedi
+          </a>
+        </div>
+
       </div>
     );
   }
 }
+
+
 
 export default App;
