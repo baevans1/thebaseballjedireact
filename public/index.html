@@ -38,7 +38,48 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="src/jquery-3.2.1.min.js"></script>
-    <script src="src/script.js"></script>
+
+
+
+    <script>
+    function initMap() {
+      var busch = {lat: 38.622634,  lng: -90.192840};
+      var kauffman = {lat: 39.051655, lng: -94.480389};
+      var wrigley = {lat: 41.948414, lng: -87.655343};
+      var whitesox = {lat: 41.829914,  lng: -87.633791};
+      var miami = {lat: 25.778286, lng: -80.220102};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: busch
+      });
+      var marker = new google.maps.Marker({
+        position: busch,
+        map: map
+      });
+      var marker2 = new google.maps.Marker({
+        position: kauffman,
+        map: map
+      });
+      var markera = new google.maps.Marker({
+        position: wrigley,
+        map: map
+      });
+      var markerb = new google.maps.Marker({
+        position: whitesox,
+        map: map
+      });
+      var marker5 = new google.maps.Marker({
+        position: miami,
+        map: map
+      });
+    }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQeJM7i2ifq4XHk58L7jdsnutaw5JYyWg&callback=initMap">
+    </script>
+
+
+
+
   </body>
 </html>
