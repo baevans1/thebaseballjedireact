@@ -1,8 +1,29 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-
-
+// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+//
+//
+// class MapContainer extends Component {
+// render() {
+//     return (
+//       <Map google={this.props.google} zoom={14}>
+//
+//         <Marker onClick={this.onMarkerClick}
+//                 name={'Current location'} />
+//
+//         <InfoWindow onClose={this.onInfoWindowClose}>
+//             <div>
+//               <h1>{this.state.selectedPlace.name}</h1>
+//             </div>
+//         </InfoWindow>
+//       </Map>
+//     );
+//   }
+// }
+// export default GoogleApiWrapper({
+//   apiKey: (AIzaSyCQeJM7i2ifq4XHk58L7jdsnutaw5JYyWg)
+// })(MapContainer)
 
 class Header extends Component {
   render() {
