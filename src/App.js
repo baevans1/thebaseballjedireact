@@ -1,29 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-//
-//
-// class MapContainer extends Component {
-// render() {
-//     return (
-//       <Map google={this.props.google} zoom={14}>
-//
-//         <Marker onClick={this.onMarkerClick}
-//                 name={'Current location'} />
-//
-//         <InfoWindow onClose={this.onInfoWindowClose}>
-//             <div>
-//               <h1>{this.state.selectedPlace.name}</h1>
-//             </div>
-//         </InfoWindow>
-//       </Map>
-//     );
-//   }
-// }
-// export default GoogleApiWrapper({
-//   apiKey: (AIzaSyCQeJM7i2ifq4XHk58L7jdsnutaw5JYyWg)
-// })(MapContainer)
+import MapContainer from './MapContainer.js';
 
 class Header extends Component {
   render() {
@@ -35,6 +13,7 @@ class Header extends Component {
               The Baseball Jedi
             </Link>
             <Navigation />
+
           </div>
         </div>
         <Switch>
@@ -78,7 +57,8 @@ class Navigation extends Component {
 class StadiumMap extends Component {
   render() {
     return (
-      <div id='map'></div>
+      // <div id='map'></div>
+      <MapContainer />
     );
   }
 }
