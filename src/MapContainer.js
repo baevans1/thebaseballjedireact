@@ -21,10 +21,18 @@ render() {
           lng: -90.192840
           }}>
           <Marker  />
-
-           <Marker
-             position={{lat: 37.762391, lng: -122.439192}}>
+          <Marker
+             position={{lat: 39.051655, lng: -94.480389}}>
           </Marker>
+          <Marker
+            position={{lat: 41.948414, lng: -87.655343}}>
+         </Marker>
+         <Marker
+           position={{lat: 41.829914,  lng: -87.633791}}>
+        </Marker>
+        <Marker
+          position={{lat: 25.778286, lng: -80.220102}}>
+       </Marker>
         </Map>
 
 
